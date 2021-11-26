@@ -25,10 +25,10 @@ export default function AuthorCv() {
         <SideBar />
       </GridItem>
       <GridItem span={{ base: 2, md: 1 }}>
-        <Flex flexDirection="column" alignItems="center">
+        <Grid w="90%" gap="8">
           <CoverLetter />
           <Experiences />
-        </Flex>
+        </Grid>
       </GridItem>
     </Grid>
   );
