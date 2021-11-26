@@ -27,6 +27,7 @@ export default function AuthorCv() {
       <GridItem span={{ base: 2, md: 1 }}>
         <Flex flexDirection="column" alignItems="center">
           <CoverLetter />
+          <Experiences />
         </Flex>
       </GridItem>
     </Grid>
@@ -215,6 +216,29 @@ function CoverLetter() {
         </Text>
       </Stack>
       <Box h={"0.5rem"} w="100%" bg="blue.500" objectFit={"cover"}></Box>
+    </Flex>
+  );
+}
+
+function Experiences() {
+  return (
+    <Flex
+      flexDirection="column"
+      alignItems="center"
+      bg={useColorModeValue("white", "gray.600")}
+    >
+      <Box h={"0.5rem"} w="100%" bg="pink.500" objectFit={"cover"}></Box>
+      <Stack mt={2} spacing={2} px="2">
+        <Heading
+          as="h2"
+          color={useColorModeValue("gray.700", "white")}
+          fontSize="4xl"
+          fontFamily="Roboto"
+        >
+          Professional Experiences
+        </Heading>
+      </Stack>
+      <Box h={"0.5rem"} w="100%" bg="pink.500" objectFit={"cover"}></Box>
     </Flex>
   );
 }
