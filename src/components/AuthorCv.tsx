@@ -24,6 +24,11 @@ export default function AuthorCv() {
       <GridItem span={{ base: 2, md: 1 }}>
         <SideBar />
       </GridItem>
+      <GridItem span={{ base: 2, md: 1 }}>
+        <Flex flexDirection="column" alignItems="center">
+          <CoverLetter />
+        </Flex>
+      </GridItem>
     </Grid>
   );
 }
@@ -125,11 +130,11 @@ function AuthorCardCv() {
         </Stack>
       </Box>
       <Box
-          h={"0.5rem"}
-          w={"full"}
-          bg={useColorModeValue("black", "gray.300")}
-          objectFit={"cover"}
-        ></Box>
+        h={"0.5rem"}
+        w={"full"}
+        bg={useColorModeValue("black", "gray.300")}
+        objectFit={"cover"}
+      ></Box>
     </Box>
   );
 }
@@ -139,6 +144,77 @@ function SideBar() {
     <Flex flexDirection="column" alignItems="center">
       <AuthorCardCv />
       <SkillCard />
+    </Flex>
+  );
+}
+
+function CoverLetter() {
+  return (
+    <Flex
+      flexDirection="column"
+      alignItems="center"
+      bg={useColorModeValue("white", "gray.600")}
+    >
+      <Box h={"0.5rem"} w="100%" bg="blue.500" objectFit={"cover"}></Box>
+      <Stack mt={2} spacing={2} px="2">
+        <Heading
+          as="h2"
+          color={useColorModeValue("gray.700", "white")}
+          fontSize="4xl"
+          fontFamily="Roboto"
+        >
+          Cover Letter
+        </Heading>
+        <Text
+          color={useColorModeValue("gray.700", "white")}
+          fontSize="2xl"
+          fontFamily="Times New Roman"
+        >
+          Hi, my name is Gilberto, I&apos;m software engineer and physicist
+          Ph.D.
+        </Text>
+        <Text
+          color={useColorModeValue("gray.700", "white")}
+          fontSize="2xl"
+          fontFamily="Times New Roman"
+        >
+          I started my software engineer studies in 2021 at PodCodar Code School
+          with focus in Front-End delopment.
+        </Text>
+        <Text
+          color={useColorModeValue("gray.700", "white")}
+          fontSize="2xl"
+          fontFamily="Times New Roman"
+        >
+          My initial studies topcis included: vanilla JavaScript, CSS, HTML 5,
+          programming logic and also tools like Git, Bootstrap, API Rest,
+          React.js, Next.js and Chakra-UI.
+        </Text>
+        <Text
+          color={useColorModeValue("gray.700", "white")}
+          fontSize="2xl"
+          fontFamily="Times New Roman"
+        >
+          Currently I&apos;m software engineer at PodCodar where I work
+          developing the new web app of this community.
+        </Text>
+        <Text
+          color={useColorModeValue("gray.700", "white")}
+          fontSize="2xl"
+          fontFamily="Times New Roman"
+        >
+          I&apos;m a strongly motivated person which like to learning and solve
+          problems that require creativity and logical reasoning.
+        </Text>
+        <Text
+          color={useColorModeValue("gray.700", "white")}
+          fontSize="2xl"
+          fontFamily="Times New Roman"
+        >
+          Thanks for visit my CV, and I hope we could be in contact.
+        </Text>
+      </Stack>
+      <Box h={"0.5rem"} w="100%" bg="blue.500" objectFit={"cover"}></Box>
     </Flex>
   );
 }
