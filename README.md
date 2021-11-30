@@ -1,3 +1,8 @@
+# :information_source: About this project.
+This project was poposed as an introduction to [Next.js](https://nextjs.org/) and [Chakra UI](https://chakra-ui.com/) in Project Mentoring of [Podcodar Code School](https://podcodar.com/), intenting to the development of a multi-page web-app with a modern, reposnive and ellegant design, so that is why we choose to work with the two above mentioned tools. 
+The web-app developed here consists of a personal page, with my academics, professional and projects informations.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -11,12 +16,6 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
