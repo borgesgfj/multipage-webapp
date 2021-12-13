@@ -20,7 +20,7 @@ import SkillCard from "./SkillCard";
 
 export default function AuthorCv() {
   return (
-    <Grid templateColumns="1fr 2fr" gap="3" mt={3}>
+    <Grid templateColumns="1fr 2fr" gap="3" my={3}>
       <GridItem span={{ base: 2, md: 1 }}>
         <SideBar />
       </GridItem>
@@ -28,6 +28,7 @@ export default function AuthorCv() {
         <Grid w="90%" gap="8">
           <CoverLetter />
           <Experiences />
+          <Education />
         </Grid>
       </GridItem>
     </Grid>
@@ -224,11 +225,10 @@ function Experiences() {
   return (
     <Flex
       flexDirection="column"
-      alignItems="center"
       bg={useColorModeValue("white", "gray.600")}
     >
       <Box h={"0.5rem"} w="100%" bg="pink.500" objectFit={"cover"}></Box>
-      <Stack mt={2} spacing={2} px="2">
+      <Stack mt={2} spacing={6} px="2">
         <Heading
           as="h2"
           color={useColorModeValue("gray.700", "white")}
@@ -237,8 +237,96 @@ function Experiences() {
         >
           Professional Experiences
         </Heading>
+        <Box>
+          <Heading as="h3" color={useColorModeValue("gray.700", "white")} fontSize="2xl">
+            Jr. Software Development Engineer
+          </Heading>
+          <Text mb="0.5rem" color={useColorModeValue("gray.700", "white")} >
+            Podcodar Code School, Nov 2021 - present
+          </Text>
+          <Text mb="0.5rem" fontSize="1.5rem" color={useColorModeValue("black.500", "white")}>
+            Podcodar is a technology education community focused on training professionals. Besides acts as developer in Podcodar web platform project, I&apos;m also monitor in initial study clicle of community (Mentoring track).
+          </Text>
+        </Box>
+        <Box>
+          <Heading as="h3" color={useColorModeValue("gray.700", "white")} fontSize="2xl">
+            Substitute Professor
+          </Heading>
+          <Text mb="0.5rem" color={useColorModeValue("gray.700", "white")} >
+            Federal University of Uberlândia (UFU), Mar 2019 - Jan 2021
+          </Text>
+          <Text mb="0.5rem" fontSize="1.5rem" color={useColorModeValue("black.500", "white")}>
+            Here I worked as substitute professor vinculated to Physics Institute. I taught basic physics classes to engineering and exact science students.
+          </Text>
+        </Box>
+        <Box>
+          <Heading as="h3" color={useColorModeValue("gray.700", "white")} fontSize="2xl">
+            Substitute Professor
+          </Heading>
+          <Text mb="0.5rem" color={useColorModeValue("gray.700", "white")} >
+            Federal University of Uberlândia (UFU), Mar 2013 - Mar 2014
+          </Text>
+          <Text mb="0.5rem" fontSize="1.5rem" color={useColorModeValue("black.500", "white")}>
+            Here I worked as substitute professor vinculated to Physics Institute. I taught basic physics classes to engineering and exact science students.
+          </Text>
+        </Box>
       </Stack>
       <Box h={"0.5rem"} w="100%" bg="pink.500" objectFit={"cover"}></Box>
+    </Flex>
+  );
+}
+
+function Education() {
+  return (
+    <Flex
+      flexDirection="column"
+      bg={useColorModeValue("white", "gray.600")}
+    >
+      <Box h={"0.5rem"} w="100%" bg="red.600" objectFit={"cover"}></Box>
+      <Stack mt={2} spacing={6} px="2">
+        <Heading
+          as="h2"
+          color={useColorModeValue("gray.700", "white")}
+          fontSize="4xl"
+          fontFamily="Roboto"
+        >
+          Education
+        </Heading>
+        <Box>
+          <Heading as="h3" color={useColorModeValue("gray.700", "white")} fontSize="2xl">
+            Physics Ph.D
+          </Heading>
+          <Text mb="0.5rem" color={useColorModeValue("gray.700", "white")} >
+            Federal University of Minas Gerais (UFMG), Mar 2014 - Apr 2018
+          </Text>
+          <Text mb="0.5rem" fontSize="1.5rem" color={useColorModeValue("black.500", "white")}>
+            During my Ph.D I developed reserach in experiemental Quantum optics.
+          </Text>
+        </Box>
+        <Box>
+          <Heading as="h3" color={useColorModeValue("gray.700", "white")} fontSize="2xl">
+            Master Degree in Physics
+          </Heading>
+          <Text mb="0.5rem" color={useColorModeValue("gray.700", "white")} >
+          Federal University of Minas Gerais (UFMG), Mar 2011 - Jun 2014
+          </Text>
+          <Text mb="0.5rem" fontSize="1.5rem" color={useColorModeValue("black.500", "white")}>
+            During my Master degree I developed reserach in experiemental Quantum optics.
+          </Text>
+        </Box>
+        <Box>
+          <Heading as="h3" color={useColorModeValue("gray.700", "white")} fontSize="2xl">
+            Material Physics, Bachelor
+          </Heading>
+          <Text mb="0.5rem" color={useColorModeValue("gray.700", "white")} >
+            Federal University of Uberlândia (UFU), Mar 2007 - Dez 2010
+          </Text>
+          <Text mb="0.5rem" fontSize="1.5rem" color={useColorModeValue("black.500", "white")}>
+            During my undergraduate I developed reserach in Scientif Iniciation programm studying light emission properties of organic coumpounds.
+          </Text>
+        </Box>
+      </Stack>
+      <Box h={"0.5rem"} w="100%" bg="red.600" objectFit={"cover"}></Box>
     </Flex>
   );
 }
